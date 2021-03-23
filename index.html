@@ -11,7 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
-    <link rel="icon" href="assets/images/logo.png">
+  <link rel="icon" href="assets/images/logo.png">
 </head>
 
 <body>
@@ -19,9 +19,6 @@
     <div class="menuheader">
       <h1 class="logo"><img onclick="location.href='index.html'" src="assets/images/logo.png" alt="logo" width=""
           height=""></h1>
-      <div id="barshambu">
-        <i id="bars" class="fas fa-bars" onclick="showMenu()"></i>
-      </div>
       <nav class="boton">
         <ul id="botons">
           <li class="activo">HOME</li>
@@ -30,80 +27,71 @@
         </ul>
       </nav>
     </div>
-    <div id="menuhambu">
-      <nav class="botonhambu">
-        <ul id="botonshambu">
-          <li class="activohambu"><a href="index.html">HOME</a></li>
-          <li><a href="studio.html">STUDIO</a></li>
-          <li><a href="talent.html">TALENT</a></li>
-          <li><a href="colecciones.html">COLLECTIONS</a></li>
-          <li><a href="contacto.html">CONTACT</a></li>
-          <li id="change"><a id="changeBtn" href="javascript:cambiarColorHome()">CAMBIAR FONDO</a></li>
-        </ul>
-      </nav>
-    </div>
   </header>
   <main>
-      <section id="hero" class="fondo"> 
-        <div class="centrado">
-          <h1 class="legend">THE BEST <br>DESIGNS AND <br>POSTERS</h1> 
+    <section id="hero" class="fondo">
+      <div class="float">
+        <h1 class="legend">THE BEST <br>DESIGNS AND <br>POSTERS</h1>
+        <div id="hero-int">
+          <a href="https://www.instagram.com/reapersdesign/"><img id="hero-img" src="assets/images/7.png" alt="">REAPERSDESIGN</a>
         </div>
-      </section>
-      <section id="features"> 
-        <div class="feats"> 
-          <div class="imgFeats"> 
-            <img class="media-icon" src="assets/images/3.png" alt="" width="" height=""> 
-          </div>
-          <div class="descFeats"> 
-            <h2 class="legFeats">Logos</h2> 
-          </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="feats">
+        <div class="imgFeats">
+          <img class="media-icon" src="assets/images/3.png" alt="" width="" height="">
         </div>
-        <div class="feats">
-          <div class="imgFeats">
-            <img class="media-icon" src="assets/images/4.png" alt="" width="" height="">
-          </div>
-          <div class="descFeats">
-            <h2 class="legFeats">Posters</h2>
-          </div>
+        <div class="descFeats">
+          <h2 class="legFeats">Logos</h2>
         </div>
-        <div class="feats">
-          <div class="imgFeats">
-            <img class="media-icon" src="assets/images/5.png" alt="" width="" height="">
-          </div>
-          <div class="descFeats">
-            <h2 class="legFeats">Designs</h2>
-          </div>
+      </div>
+      <div class="feats">
+        <div class="imgFeats">
+          <img class="media-icon" src="assets/images/4.png" alt="" width="" height="">
         </div>
-      </section>
-      <section id="forms">
-        <h2 id="comms">Have any commissions? Make sure to share your ideas down below!</h2>
-        <form>
-          <input class="shrt-answer" type="text" placeholder="Name">
-          <div class="gender">
-            <label>Gender</label>
-            <select id="gender" name="Gender">
-              <option value="def" selected hidden>...</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <input class="shrt-answer" type="email" placeholder="E-mail">
-          <textarea placeholder="Your idea/commission"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </section>
-      <section id="social-media">
-        <h1>Support my social media!</h1>
-        <div id="redes">
-          <div class="redes-art">
-            <img src="assets/images/6.png" alt="">
-          </div>
-          <div class="redes-art">
-            <img src="assets/images/7.png" alt="">
-          </div>
+        <div class="descFeats">
+          <h2 class="legFeats">Posters</h2>
         </div>
-      </section>
+      </div>
+      <div class="feats">
+        <div class="imgFeats">
+          <img class="media-icon" src="assets/images/5.png" alt="" width="" height="">
+        </div>
+        <div class="descFeats">
+          <h2 class="legFeats">Designs</h2>
+        </div>
+      </div>
+    </section>
+    <section id="forms">
+      <h2 id="comms">Have any commissions? Make sure to share your ideas down below!</h2>
+      <form>
+        <input class="shrt-answer" type="text" placeholder="Name">
+        <div class="gender">
+          <label>Gender</label>
+          <select id="gender" name="Gender">
+            <option value="def" selected hidden>...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <input class="shrt-answer" type="email" placeholder="E-mail">
+        <textarea placeholder="Your idea/commission"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section id="social-media">
+      <h1>Support my social media!</h1>
+      <div id="redes">
+        <div class="redes-art">
+          <img src="assets/images/6.png" alt="">
+        </div>
+        <div class="redes-art">
+          <img src="assets/images/7.png" alt="">
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="footer1">
