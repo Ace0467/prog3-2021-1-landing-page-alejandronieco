@@ -72,6 +72,17 @@ body, html {
     justify-content: space-between;
     }
 
+    @keyframes example{
+
+      0% {background-image: url("../images/1.jpg");}
+      25% {background-image: url("../images/1.jpg");}
+      50% {background-image: url("../images/2.jpg");}
+      75% {background-image: url("../images/2.jpg");}
+      100% {background-image: url("../images/1.jpg");}
+  
+     }
+    
+
 #hero {
     background-image: url("../images/1.jpg");
     background-color: #cccccc;
@@ -122,7 +133,7 @@ body, html {
   }
 
   .feats{
-    margin: 0 3%;
+    margin: 0 auto;
     position: relative;
   }
 
