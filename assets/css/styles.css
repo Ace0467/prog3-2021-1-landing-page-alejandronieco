@@ -1,0 +1,3301 @@
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+  
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body, html {
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: #777;
+  }
+
+  header{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%
+    }
+
+  header > div{
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    #barshambu{
+
+      margin: 2%;
+      display: none;
+
+    }
+
+    #bars{
+
+      font-size: 2em;
+    color: #4ca9b4;
+
+    }
+    
+    h1.logo {
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 0px;
+      font-style: thin;
+      transition: 0.5s
+    }
+  
+    h1.logo:hover {
+      transform: scale(1.125);
+      cursor: pointer;
+    }
+    
+    .boton{
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      opacity: 1;
+      transition: 0.5s;
+    }
+  
+    #botons{
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
+   
+
+    ul#botons li {
+      text-align: center;
+      border: 0px;
+      padding:6% 1.5em;
+      color: white;
+      font-size: 1em;
+      font-weight: 500;
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+
+    #botons li:hover, .activo{
+      opacity: 1!important; 
+  }
+
+  .menuheader{
+
+    width: 90%;
+    padding: 0 5%;
+    align-items: center;
+    margin-top: 1%;
+
+  }
+  
+  /*MENU HAMBURGUESA*/
+
+  #menuhambu{
+
+    width: 100%;
+    display: none;
+
+  }
+
+  .botonhambu{
+    width: 100%;
+    background-color: black;
+  }
+
+  #botonshambu{
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  ul#botonshambu li {
+    text-align: left;
+    border: 0px;
+    padding: 1%;
+    background-color: Transparent;
+    background-repeat: no-repeat;  
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  ul#botonshambu li a{
+    color:#fff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  #botonshambu li:hover, .activohambu{
+    opacity: 1!important; 
+    background-color: rgba(76, 169, 180)!important;
+}
+
+
+  /*TERMINA HAMBU*/
+
+  #slider h1{
+    padding-top:0!important;
+  }
+
+  @keyframes example{
+
+    0% {background-image: url("../images/1.jpg");}
+    25% {background-image: url("../images/1.jpg");}
+    50% {background-image: url("../images/2.jpg");}
+    75% {background-image: url("../images/2.jpg");}
+    100% {background-image: url("../images/1.jpg");}
+
+   }
+  
+  .fondo{
+    background-image: url("../images/1.jpg");
+    background-color: #cccccc;
+    height: 100vh; 
+    position: relative;
+    opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+  }
+
+  .centrado{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    float: right;
+  }
+
+  h1.titulo {
+    color: white;
+    font-size: 5em;
+    padding-top:2em;
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-style: thin;
+    margin-right: 1em;
+    text-shadow: 9px 4px 4px rgba(0, 0, 0, 0.25);  
+  }
+
+  .boton2{
+    background: rgb(0, 247, 255, 0.25);
+    background-repeat:no-repeat;  
+    border: 0px;
+    color: white;
+    padding: 12px 24px;
+    margin-bottom: 36px;
+    text-align: center;
+    font-size: 24px;
+    font-size: 2em;
+    font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .wrapper {
+    background-color: Transparent;
+    background-repeat:no-repeat; 
+    text-align: center;
+    opacity: 0.75;
+    transition: 0.5s;
+  }
+  .wrapper:hover {opacity: 1}
+
+  .boton3 {
+    background-color: Transparent;
+    background-repeat:no-repeat;  
+    border: 2px solid white;
+    color: white;
+    padding: 0.75em 2.5em; /*In %, they stack in top of each other*/
+    margin-left:1.875em;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.875em;
+    font-weight: bold;
+    opacity: 0.75;
+    transition: 0.5s;
+  }
+  
+  .boton3:hover {
+    cursor: pointer;
+    opacity: 1
+  }
+
+   #seccion2{
+      background-color: #222222;
+      background-position: left top;
+      background-repeat: no-repeat;
+      padding: 6% 12%;
+      position: relative;
+}
+
+#containers-sec2{
+  display: flex;
+}
+
+.img-sec2{
+
+  width: 50%;
+
+}
+
+.cont-sec2 {
+
+  background-color: white;
+
+}
+
+  .seccion3{
+    background-color: rgba(0, 0, 0);
+    padding: 6% 15%;
+    position: relative;
+    text-align: center;
+    width: 20%;
+    float:left;
+    height: 64vh;
+}
+
+h2.quality{
+  background-color: transparent;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+
+h3.servicio{
+background-color: transparent;
+display: inline-block;
+color: white;
+font-size: 1.125em;
+padding-bottom: 5%;
+position: relative;
+}
+
+h4.serviciosub{
+background-color: transparent;
+display: inline-block;
+color: white;
+font-size: 1em;
+text-align: center;
+padding-bottom: 5%;
+position: relative;
+}
+
+.readmore {
+  background-color: Transparent;
+  background-repeat:no-repeat;  
+  border: 2px solid white;
+  color: white;
+  padding: 4% 8%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: 0.5s;
+} 
+
+.readmore:hover {opacity: 1}
+
+.seccion4{
+  background-image: url("../images/3.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 87.7vh;
+  width: 50%;
+  float:left;
+}
+
+.seccion5{
+  background-image: url("../images/4.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%
+}
+
+.seccion5sub{
+  width: 100%;
+  text-align: center;
+}
+
+h2.live{
+  display: inline-block;
+  background-color: Transparent;
+  border: 0.5em solid white;
+  color: white;
+  padding: 7%;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.signtoday {
+  display: inline-block;
+  background-color: rgb(0, 238, 255, 0.5);
+  border: 2px solid white;
+  color: white;
+  padding: 1% 3%;
+  margin-left:2%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+.signtoday:hover{
+
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+#seccion6{
+  background-color: #222222;
+  padding: 5% 9%;
+  position: relative;
+
+}
+
+.talento{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.person{
+  width: 25%;
+  text-align: center;
+}
+
+img.perfil{
+  display: inline-block;
+  max-width: 85%;
+  height: auto;
+}
+
+  h2.sandra{
+  background-color: transparent;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+
+p.sandradesc{
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+#SieteYocho{
+
+  display: inline-flex;
+
+}
+
+.seccion7{
+  background-color: rgba(76, 169, 180);
+  padding: 6% 15%;
+  position: relative;
+  text-align: center;
+  width: 20%;
+  float:right;
+  height: 65vh;
+  align-items: center;
+}
+.seccion8{
+padding: 0px;
+background-image: url("../images/9.jpg");
+background-position: center top;
+background-size: cover;
+height: 87.5vh;
+width: 50%;
+
+}
+
+#seccion9{
+  background-color: #222222;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  position: relative;
+  margin-top: -1%;
+}
+
+h2.coleccion{
+  background-color: transparent;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  padding-bottom: 5%;
+}
+
+h2.coleccion::after{
+  content: url("../images/2,5.png");
+  display: block;
+  }
+
+.galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galeria > li{
+  text-align: center;
+  width: 33%;
+}
+
+.galeriaColecciones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galeriaColecciones > li{
+  text-align: center;
+  width: 33%;
+}
+
+.galeriaStudio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galeriaStudio > li{
+  text-align: center;
+  width: 33%;
+}
+
+
+img.picgaleria{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+#seccion10{
+  background-color: #141416;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 6% 12%;
+  position: relative;
+}
+
+h2.trends{
+  background-color: transparent;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+
+h3.trendssub{
+  background-color: transparent;
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 1.25em;
+  }
+
+  h2.trends::after{
+    content: url("../images/2,5.png");
+    display: block;
+    }
+    
+   .trendsImg{
+
+    margin-top: 5%;
+
+   }
+
+   #elevenAndTwelve{
+
+    display: inline-flex;
+
+   }
+
+
+  
+  .seccion11{
+    background-color: rgba(0, 0, 0);
+    padding-top: 7%;
+    width: 50%;
+    height: 91.2vh;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    }
+
+  .seccion11 img{
+    width: 25%;
+    margin-top:3%;
+     }
+
+  h2.meet{
+    background-color: transparent;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  }
+
+  .estudio{
+    margin-bottom:5%;
+    text-align:center;
+  }
+
+  .noticias{
+    display: block;
+    text-align: left;
+    width:80%;
+    margin:0 auto;
+  }
+
+  img.picnoticia {
+    float: left;
+}
+
+.seccion11sub img {
+    width: 25%;
+    margin-top: 3%;
+}
+
+  .notanoticia {
+    float: left;
+    width: 70%;
+    margin-left: 5%;
+}
+
+  h2.titulonoticia{
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  }
+  
+  h3.fechanoticia{
+    background-color: transparent;
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    text-align: left;
+    padding-bottom: 1.25em;
+    position: relative;
+  }
+  
+  h3.descnoticia{
+    background-color: transparent;
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    text-align: left;
+    padding-bottom: 1.25em;
+    position: relative;
+  }
+
+  h3.comentarionoticia {
+    background-color: transparent;
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    text-align: left;
+    padding-bottom: 1.25em;
+    position: relative;
+}
+
+.seccion12{
+  padding: 0px;
+  background-image: url("../images/16.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 439px;
+  height: 95.8vh;
+  width: 50%;
+  display: inline-block;
+  
+  }
+
+  .seccion12sub{
+    padding-top:6%;
+  }
+  .imagen12{
+    width:24%;
+    margin-left:38%;
+    margin-right:38%;
+    border-radius: 50%;
+    margin-top:2%;
+  }
+  .subtexto12{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+  }
+  .nombre{
+   color:white;
+   text-align: center;
+   font-weight: bold;
+   font-size:1.5em;
+  }
+
+  .seccion13{
+    background-image: url("../images/18.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+  }
+
+  h2.help{
+    background-color: transparent;
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+    opacity: 1;
+    transition: 0.5s
+  }
+
+  h2.helpCol{
+    background-color: transparent;
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+    opacity: 1;
+    transition: 0.5s
+  }
+
+  h3.ideas{
+    background-color: transparent;
+    display: inline-block;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    opacity: 1;
+    position: relative;
+    letter-spacing: 0.2em;
+    margin-bottom: 1%;
+    }
+
+  .contacto{
+    background-color: Transparent;
+    background-repeat:no-repeat;  
+    border: 2px solid white;
+    color: white;
+    padding: 0.5% 2%;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 200%;
+    font-weight: bold;
+    opacity: 0.75;
+    transition: 0.5s;
+     } 
+
+  .contacto:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  /*-----TERMINA HOME-----*/
+  /*-----EMPIEZA CONTACTO----*/
+  .seccion14{
+    background-image: url("../images/21.jpg");
+    padding-top: 10%;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+  }
+
+  #seccion15{
+    background-color: rgba(0, 0, 0);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    float:left;
+    height: 53vh;
+}
+
+.texto15{
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+h4.estudiosub{
+  background-color: transparent;
+  display: flex;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  padding-bottom: 5%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+h4.estudiosub a{
+font-weight: bold;
+}
+
+.seccion16{
+  background-color: #1b1b1c;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: relative;
+  height: 26.65em;
+  text-align: left;
+}
+
+.seccion16sub{
+  padding-left: 10%;
+}
+
+
+input{
+  width: 75%;
+  height: 2em;
+  background-color: #222222;
+  font-size: 1em;
+  color: #ffffff;
+  border-width: 1px;
+  border-color: #242528;
+}
+
+
+textarea{
+  min-height: 25%;
+  min-width: 75%;
+  width: 100%;
+  height: 12em;
+  resize: vertical;
+  background-color: #222222;
+  font-size: 1em;
+  color: #ffffff;
+  border-width: 1px;
+  border-color: #242528;
+}
+
+p.forms{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h4.form{
+  background-color: transparent;
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  text-align: left;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.seccionmapa{
+  background-color: #121213;
+  float: left;
+  width: 100%;
+}
+.map{
+  margin: 0 auto;
+}
+
+.mapa{
+  width:100%;
+  height: 75vh;
+}
+
+  /*-----TERMINA CONTACTO-----*/
+  /*-----EMPIEZA COLECCIONES----*/
+
+.seccion17{
+  background-image: url("../images/22.jpg");
+  background-position: center top;
+  padding-top: 10%;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+#seccion18{
+  background-color: #222222;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  position: relative;
+}
+
+h3.welcomesub18{
+  background-color: transparent;
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 1.25em;
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+  padding-bottom: 9%
+}
+
+
+
+
+  footer{
+    background-color: #181819;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .footer1{
+    background-color: #181819;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .pfooter a{
+    color:green;
+    text-decoration: none;
+  }
+
+  p.pfooter{
+    font-size: 0.8em;
+    color: #ffff;
+  }
+
+  .redsocial{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .iconored{
+    font-size: 1em;
+  }
+  
+  .redsocial li{
+    padding: 1em 1.5em;
+    background-color:#000;
+    color: #ffff;
+    margin-left:0.6em;
+    opacity: 1;
+  }
+  
+  .redsocial li:hover{
+    opacity: 0.75;
+  }
+
+
+  h2{ 
+
+    background: rgb(0, 238, 255, 0.5)
+ 
+  }
+
+  #changeBtn{
+
+    color: #fff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+
+  }
+
+  #changeBtn :hover{
+
+    cursor: pointer;
+
+  }
+
+  #profesion{
+
+    font-weight: normal;
+    font-size: 0.9em;
+
+  }
+
+  .collectionssub{
+    background-color: transparent;
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1.25em;
+    width: 50%;
+    }
+
+    .seccion14Studio{
+      background-image: url("../images/23.jpg");
+      background-position: center;
+      padding-top: 10%;
+      text-align: center;
+      width: 100%;
+      height: 40vh;
+    }
+  
+
+#seccion9{
+   background-color: #222222;
+   background-position: left top;
+   background-repeat: no-repeat;
+   padding-top: 6%;
+   padding-bottom: 6%;
+   position: relative;
+}
+
+.seccion19{
+  background-image: url("../images/18.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-top: 10%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+#seccion20{
+  background-color: #222222;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 6% 12%;
+  position: relative;
+}
+
+#seccion21{
+  background-color: black;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 4.5% 9%;
+  position: relative;
+  text-align: center;
+}
+
+.seccion5Studio{
+  background-image: url("../images/24.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%
+}
+
+.seccion5Studiosub{
+  width: 100%;
+  text-align: center;
+}
+
+.seccion5Studiosub h2{
+  font-style: italic;
+  display: inline-block;
+  background-color: Transparent;
+  color: white;
+  padding: 2%;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+}
+
+.seccion5Studiosub h3{
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: white;
+  width: 30.5%;
+  letter-spacing: 0.3em;
+  margin-top: 2.5%;
+}
+
+#quote{
+
+  display: inline-flex;
+
+}
+
+#quoteIcon{
+
+  font-size: 2.5em;
+  color: #4ca9b4;
+  align-self: center;
+  margin-right: 3em;
+
+}
+
+
+.collectionssub2{
+  background-color: transparent;
+  display: inline-block;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  padding-bottom: 1.25em;
+  width: 75%;
+  }
+
+
+.coleccion2{
+  background-color: transparent;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+
+/* FLIP CARDS */
+
+.flip-card {
+  background-color: transparent;
+  width: 48vh;
+  height: 30vh;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  margin: 2%;
+  text-align: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: black;
+  color: white;
+  border: 10px solid white;
+}
+
+.flip-card-front h2{
+  margin: 22%;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: black;
+  color: white;
+  border: 10px solid white;
+}
+
+.flip-card-back h3{
+  font-size: 1.5em;
+  margin-top: 5%;
+}
+
+.flip-card-back p{
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* FIN DE FLIP CARDS */
+
+.seccion22{
+  background-image: url("../images/25.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%
+}
+
+#seccion23{
+  background-color: #131315;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 6% 12%;
+  position: relative;
+}
+
+#seccion23cont{
+
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.para{
+  background-color: transparent;
+  color: #4ca9b4;
+  font-size: 2.25em;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  
+}
+
+.paragraphsWords{
+
+  color: white;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+
+}
+
+#paragraphs{
+
+  width: 50%;
+
+}
+
+
+.seccion24{
+  background-image: url("../images/27.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%
+}
+
+#seccion25{
+  background-color: #131315;
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 6% 12%;
+  position: relative;
+}
+
+#seccion25cont{
+
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.galeria25{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imgSec25{
+  text-align: center;
+  width: 25%;
+  margin-top: 4.25%;
+}
+
+.picSec25{
+  display: inline-block;
+  width: 50%;
+  height: auto;
+}
+
+.seccion14Servicio{
+  background-image: url("../images/36.jpg");
+  background-position: center top;
+  padding-top: 10%;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+#seccion25Serv{
+  background-color: #131315;
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.galeriaServ{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.imagengaleriaServ{
+  background-color: #222222;
+  text-align: center;
+  width: 33%;
+  text-align: center;
+}
+
+.imagengaleriaServ2{
+  background-color: black;
+  text-align: center;
+  width: 33%;
+}
+
+.picgaleriaServ{
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  margin: 10% auto 5% auto;
+}
+
+.imagengaleriaServ h2{
+  background-color: transparent;
+  color: white;
+  font-size: 2.25em;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  
+}
+
+.imagengaleriaServ2 h2{
+  background-color: transparent;
+  color: white;
+  font-size: 2.25em;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  
+}
+
+.imagengaleriaServ p{
+  width: 75%;
+  text-align: center;
+  color: white;
+  margin: 5% auto 15% auto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.imagengaleriaServ2 p{
+  width: 75%;
+  text-align: center;
+  color: white;
+  margin: 5% auto 15% auto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.seccion5Serv{
+  background-color: #4ca9b4;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 30vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%
+}
+
+.seccion5ServSub{
+  width: 100%;
+  text-align: center;
+}
+
+.liveServ{
+  display: inline-block;
+  background-color: Transparent;
+  color: white;
+  padding: 7%;
+  font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  line-height: 0px;
+  font-weight: bold;
+}
+
+.signtodayServ {
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  padding: 1% 3%;
+  margin-left:2%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: bold;
+} 
+
+.seccion14Talent{
+  background-image: url("../images/44.jpg");
+  background-position: center top;
+  padding-top: 10%;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+
+#seccion6TalentMain1{
+  background-color: #222222;
+  align-items: center;
+  text-align: center;
+  padding: 5% 9% 5% 13%;
+  display: flex;
+
+}
+
+#box-container{
+ 
+  align-items: center;
+  text-align: center;
+  display: flex;
+
+}
+
+#seccion6TalentMain2{
+  background-color: #222222;
+  padding: 5% 9%;
+  position: relative;
+
+}
+
+.seccion6Talent2{
+  background-color: #080809;
+  padding: 5% 9%;
+  position: relative;
+
+}
+
+.talentoTalent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#personTalentMain1{
+  margin: 0 3%;
+  position: relative;
+}
+
+#personTalentMain2{
+  background-color: #222222;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+
+.personTalent2{
+  background-color: #080809;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+
+.perfilTalent{
+  display: inline-block;
+  width: 33%;
+}
+
+
+
+  h2.sandraTalent{
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin: 10% 0;
+}
+
+p.sandradescTalent{
+  color: white;
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    margin: 5% auto 0 auto;
+}
+
+p.talentJob{
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 66%;
+  margin: 3% auto;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.personTalent2{
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+
+.redsocialTalent{
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin: 5% auto;
+}
+
+.iconoredTalent{
+  font-size: 1em;
+}
+
+.redsocialTalent li{
+  padding: 1em 1.5em;
+  background-color:#000;
+  color: #ffff;
+  opacity: 1;
+}
+
+.redsocialTalent li:hover{
+  opacity: 0.75;
+}
+/* EMPIEZA MOBILE 320*/
+@media (min-width: 320px) and (max-width: 479px){
+  .menuheader{
+
+    width: 90%;
+    background-color: black;
+    padding: 0 5%;
+    align-items: center;
+
+  }
+
+  /*MENU HAMBURGUESA*/
+
+  #barshambu{
+
+    display: block;
+
+  }
+
+  #bars{
+
+    font-size: 1.5em;
+  color: #4ca9b4;
+
+  }
+
+  #menuhambu{
+
+    width: 100%;
+    display: none;
+
+  }
+
+  .botonhambu{
+    width: 100%;
+    background-color: black;
+  }
+
+  #botonshambu{
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  ul#botonshambu li {
+    text-align: left;
+    border: 0px;
+    padding: 1% 3%;
+    background-color: Transparent;
+    background-repeat: no-repeat;  
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  ul#botonshambu li a{
+    color:#fff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  #botonshambu li:hover, .activohambu{
+    opacity: 1!important; 
+    background-color: rgba(76, 169, 180)!important;
+}
+
+
+  /*TERMINA HAMBU*/
+
+  .boton{
+
+    display: none;
+
+  }
+
+  h1.titulo{
+
+    font-size: 2.5em;
+
+  }
+
+  .boton2{
+
+    font-size: 1.5em;
+
+  }
+
+  .boton3{
+
+    font-size: 0.75em;
+
+  }
+
+  .seccion3{
+    width: 70%;
+    height: 71vh;
+  }
+
+  .seccion4{
+    width: 100%;
+    height: 22vh;
+  }
+
+  h2.live{
+
+    width: 63%;
+    text-align: left;
+    margin-bottom: 5%;
+
+  }
+
+  #seccion6{
+
+    text-align: center;
+
+  }
+
+  .talento{
+
+    display: block;
+
+  }
+
+  .person{
+
+    width: 100%;
+
+  }
+
+  .perfil{
+
+    max-width: 100%;
+
+  }
+
+  .sandra{
+
+    padding-right: 1%;
+    margin: 5%;
+
+  }
+
+  .sandradesc{
+
+    margin: 5%;
+    padding-right: 1%;
+
+  }
+
+  #SieteYocho{
+
+    display: block;
+  
+  }
+
+  .seccion8{
+
+    width: 100%;
+    height: 48.5vh;
+
+  }
+
+  .seccion7{
+
+    width: 70%;
+    float: none;
+    height: 80vh;
+
+  }
+
+  .galeria > li{
+
+    width: 100%;
+
+  }
+
+  #elevenAndTwelve{
+
+    display: block;
+
+   }
+
+   .seccion11{
+
+    width: 100%;
+    height: 106vh;
+
+   }
+
+   .imagennoticia{
+
+    margin: 0 auto 0 0.5em
+
+   }
+
+   .seccion11sub img {
+    width: 50%;
+  }
+ 
+  .notanoticia {
+    width: 100%;
+}
+
+  h2.titulonoticia{
+
+    width: 101%;
+
+  }
+
+   .seccion12{
+
+    width: 100%;
+
+   }
+
+   h2.help{
+
+    font-size: 1.5em;
+
+   }
+
+   h3.ideas{
+
+    font-size: 0.9em;
+    margin-top: 1em;
+
+   }
+
+   .contacto{
+
+    font-size: 0.9em;
+    margin-top: 1em;
+
+   }
+
+   footer{
+
+    padding: 3% 6%;
+
+   }
+
+   .footer1{
+
+    display: block;
+    width: 100%;
+
+   }
+
+   .pfooter{
+
+    text-align: center;
+
+   }
+   
+   .redsocial{
+
+    margin: 4% auto;
+
+   }
+
+   .helpCol{
+    margin-top: 7%;
+    font-size: 2.5em;
+  }
+
+  .seccion17{
+
+    background-position: center top;
+    background-size: cover;
+    height: 34vh;
+
+  }
+
+  .galeriaColecciones > li {
+    width: 100%;
+  }
+
+  .seccion14 {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+  #seccion15{
+
+    width: 100%;
+
+  }
+
+  .seccion14Talent{
+
+    background-size: cover;
+
+  }
+
+  .seccion16{
+
+    width: 100%;
+
+  }
+
+  .seccion14Studio {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+#quote{
+
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+#quoteIcon{
+
+  margin-right: 0.1em;
+
+}
+
+#quoteWords h2{
+
+  text-align: left;
+  font-size: 1.5em;
+
+}
+
+#quoteWords h3{
+
+  text-align: left;
+  width: 100%;
+
+}
+
+.galeriaStudio {
+  margin-right: 6%;
+}
+
+.flip-card{
+
+  margin-bottom: 10%;
+
+}
+
+#seccion23cont{
+
+  display: block;
+
+}
+
+#paragraphs{
+
+  width: 100%;
+
+}
+
+.imgSec25{
+
+  width: 50%;
+  
+}
+
+.picSec25{
+
+  width: 90%;
+
+}
+
+#personTalentMain1{
+
+  display: block;
+
+}
+
+#personTalentMain2{
+
+  display: block;
+
+}
+
+.personTalent2{
+
+  display: block;
+
+}
+
+.imgTalent{
+
+  width: 100%;
+
+}
+
+.perfilTalent{
+
+  width: 100%;
+
+}
+
+.talentDesc {
+  width: 100%;
+}
+
+
+.redsocialTalent {
+  width: 70%;
+}
+
+#seccion15{
+
+  height: 85vh;
+
+}
+
+}
+/* TERMINA MOBILE 320 */
+/* EMPIEZA MOBILE*/
+@media (min-width: 480px) and (max-width: 481px){
+  .menuheader{
+
+    width: 90%;
+    background-color: black;
+    padding: 0 5%;
+    align-items: center;
+
+  }
+
+  /*MENU HAMBURGUESA*/
+
+  #barshambu{
+
+    display: block;
+
+  }
+
+  #bars{
+
+    font-size: 1.5em;
+  color: #4ca9b4;
+
+  }
+
+  #menuhambu{
+
+    width: 100%;
+    display: none;
+
+  }
+
+  .botonhambu{
+    width: 100%;
+    background-color: black;
+  }
+
+  #botonshambu{
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  ul#botonshambu li {
+    text-align: left;
+    border: 0px;
+    padding: 1% 3%;
+    background-color: Transparent;
+    background-repeat: no-repeat;  
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  ul#botonshambu li a{
+    color:#fff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  #botonshambu li:hover, .activohambu{
+    opacity: 1!important; 
+    background-color: rgba(76, 169, 180)!important;
+}
+
+
+  /*TERMINA HAMBU*/
+
+  .boton{
+
+    display: none;
+
+  }
+
+  h1.titulo{
+
+    font-size: 3em;
+
+  }
+
+  .boton3{
+
+    font-size: 0.75em;
+
+  }
+
+  .seccion3{
+    width: 70%;
+  }
+
+  .seccion4{
+    width: 100%;
+    height: 43vh;
+  }
+
+  h2.live{
+
+    width: 63%;
+    text-align: left;
+    margin-bottom: 5%;
+
+  }
+
+  #seccion6{
+
+    text-align: center;
+
+  }
+
+  .talento{
+
+    display: block;
+
+  }
+
+  .person{
+
+    width: 100%;
+
+  }
+
+  .perfil{
+
+    max-width: 100%;
+
+  }
+
+  .sandra{
+
+    padding-right: 1%;
+    margin: 5%;
+
+  }
+
+  .sandradesc{
+
+    margin: 5%;
+    padding-right: 1%;
+
+  }
+
+  #SieteYocho{
+
+    display: block;
+  
+  }
+
+  .seccion8{
+
+    width: 100%;
+    height: 48.5vh;
+
+  }
+
+  .seccion7{
+
+    width: 70%;
+    float: none;
+
+  }
+
+  .galeria > li{
+
+    width: 100%;
+
+  }
+
+  #elevenAndTwelve{
+
+    display: block;
+
+   }
+
+   .seccion11{
+
+    width: 100%;
+
+   }
+
+   .seccion12{
+
+    width: 100%;
+
+   }
+
+   h2.help{
+
+    font-size: 2em;
+
+   }
+
+   h3.ideas{
+
+    font-size: 1em;
+
+   }
+
+   footer{
+
+    padding: 3% 6%;
+
+   }
+
+   .footer1{
+
+    display: block;
+    width: 100%;
+
+   }
+
+   .pfooter{
+
+    text-align: center;
+
+   }
+   
+   .redsocial{
+
+    width: 64%;
+    margin: 4% auto;
+
+   }
+
+   .helpCol{
+    margin-top: 7%;
+    font-size: 2.5em;
+  }
+
+  .seccion17{
+
+    background-position: center top;
+    background-size: cover;
+    height: 34vh;
+
+  }
+
+  .galeriaColecciones > li {
+    width: 100%;
+  }
+
+  .seccion14 {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+  #seccion15{
+
+    width: 100%;
+    height: 60vh;
+
+  }
+
+  .seccion16{
+
+    width: 100%;
+
+  }
+
+  .seccion14Studio {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+#quote{
+
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+#quoteIcon{
+
+  margin-right: 0.1em;
+
+}
+
+#quoteWords h2{
+
+  text-align: left;
+  font-size: 1.5em;
+
+}
+
+#quoteWords h3{
+
+  text-align: left;
+  width: 100%;
+
+}
+
+.galeriaStudio{
+
+  margin-left: 6%;
+
+}
+
+.flip-card{
+
+  margin-bottom: 10%;
+
+}
+
+#seccion23cont{
+
+  display: block;
+
+}
+
+#paragraphs{
+
+  width: 100%;
+
+}
+
+.imgSec25{
+
+  width: 50%;
+  
+}
+
+.picSec25{
+
+  width: 75%;
+
+}
+
+#personTalentMain1{
+
+  display: block;
+
+}
+
+#personTalentMain2{
+
+  display: block;
+
+}
+
+.personTalent2{
+
+  display: block;
+
+}
+
+.imgTalent{
+
+  width: 100%;
+
+}
+
+.perfilTalent{
+
+  width: 100%;
+
+}
+
+.talentDesc {
+  width: 100%;
+}
+
+
+.redsocialTalent {
+  width: 50%;
+}
+
+}
+/* TERMINA MOBILE */
+
+/* EMPIEZA TABLET */
+
+@media (min-width: 482px) and (max-width: 1023px){
+  .menuheader{
+
+    width: 90%;
+    background-color: black;
+    padding: 0 5%;
+    align-items: center;
+
+  }
+
+  /*MENU HAMBURGUESA*/
+
+  #barshambu{
+
+    display: block;
+
+  }
+
+  #bars{
+
+    font-size: 2em;
+  color: #4ca9b4;
+
+  }
+
+  #menuhambu{
+
+    width: 100%;
+    display: none;
+
+  }
+
+  .botonhambu{
+    width: 100%;
+    background-color: black;
+  }
+
+  #botonshambu{
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  ul#botonshambu li {
+    text-align: left;
+    border: 0px;
+    padding: 1% 3%;
+    background-color: Transparent;
+    background-repeat: no-repeat;  
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  ul#botonshambu li a{
+    color:#fff;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  #botonshambu li:hover, .activohambu{
+    opacity: 1!important; 
+    background-color: rgba(76, 169, 180)!important;
+}
+
+
+  /*TERMINA HAMBU*/
+
+  .boton{
+
+    display: none;
+
+  }
+
+  h1.titulo{
+
+    font-size: 5em;
+
+  }
+
+  h1.logo{
+
+    padding: 2% 0;
+    width: 33%;
+
+  }
+
+  .boton3{
+
+    font-size: 0.75em;
+
+  }
+
+  .seccion3{
+    width: 70%;
+  }
+
+  .seccion4{
+    width: 100%;
+    height: 60vh;
+  }
+
+  h2.live{
+
+    width: 63%;
+    text-align: left;
+    margin-bottom: 5%;
+
+  }
+
+  .seccion5sub {
+    display: inline-flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.live {
+  width: 52%;
+  text-align: left;
+  margin-bottom: 0%;
+}
+
+  #seccion6{
+
+    text-align: center;
+
+  }
+
+  .talento{
+
+    display: inline-flex;
+
+  }
+
+  .person{
+
+    width: 50%;
+
+  }
+
+  .perfil{
+
+    max-width: 100%;
+
+  }
+
+  .sandra{
+
+    padding-right: 1%;
+    margin: 5%;
+
+  }
+
+  .sandradesc{
+
+    margin: 5%;
+    padding-right: 1%;
+
+  }
+
+  #SieteYocho{
+
+    display: block;
+  
+  }
+
+  .seccion8{
+
+    width: 100%;
+    height: 48.5vh;
+
+  }
+
+  .seccion7{
+
+    width: 70%;
+    float: none;
+
+  }
+
+  .galeria > li{
+
+    width: 49.5%;
+
+  }
+
+  #elevenAndTwelve{
+
+    display: block;
+
+   }
+
+   .seccion11{
+
+    width: 100%;
+
+   }
+
+   .seccion12{
+
+    width: 100%;
+    height:113.5vh;
+
+   }
+
+   .subtexto12{
+
+    width: 80%;
+
+   }
+
+   h2.help{
+
+    font-size: 2.5em;
+
+   }
+
+   h3.ideas{
+
+    font-size: 1em;
+    width: 65%;
+
+   }
+
+   footer{
+
+    padding: 3% 6%;
+
+   }
+
+   .footer1{
+
+    display: block;
+    width: 100%;
+
+   }
+
+   .pfooter{
+
+    text-align: center;
+
+   }
+   
+   .redsocial{
+
+    width: 40%;
+    margin: 4% auto;
+
+   }
+
+   .helpCol{
+    margin-top: 7%;
+    font-size: 2.5em;
+  }
+
+  .seccion17{
+
+    background-position: center top;
+    background-size: cover;
+    height: 34vh;
+
+  }
+
+  .galeriaColecciones > li {
+    width: 49.5%;
+  }
+
+  .seccion14 {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+  #seccion15{
+
+    width: 100%;
+    height: 60vh;
+
+  }
+
+  .seccion16{
+
+    width: 100%;
+
+  }
+
+  .seccion14Studio {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+#quote{
+
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+#quoteIcon{
+
+  margin-right: 0.1em;
+
+}
+
+#quoteWords h2{
+
+  text-align: center;
+  font-size: 2em;
+
+}
+
+#quoteWords h3{
+
+  text-align: center;
+  width: 100%;
+
+}
+
+.galeriaStudio{
+
+  margin-left: 23%;
+
+}
+
+.flip-card{
+
+  margin-bottom: 10%;
+
+}
+
+#seccion23cont{
+
+  display: block;
+
+}
+
+#paragraphs{
+
+  width: 100%;
+
+}
+
+.imgSec25{
+
+  width: 50%;
+  
+}
+
+.picSec25{
+
+  width: 50%;
+
+}
+
+#personTalentMain1{
+
+  display: inline-flex;
+
+}
+
+#personTalentMain2{
+
+  display: inline-flex;
+
+}
+
+.personTalent2{
+
+  display: inline-flex;
+
+}
+
+.imgTalent{
+
+  width: 100%;
+
+}
+
+.perfilTalent{
+
+  width: 75%;
+
+}
+
+.talentDesc {
+  width: 100%;
+}
+
+
+.redsocialTalent {
+  width: 65%;
+}
+
+h1.sandraTalent{
+
+  font-size: 2.5em;
+
+}
+
+p.sandradescTalent{
+
+  width: 90%;
+
+}
+
+}
+
+/*TERMINA TABLET*/
+/*EMPIEZA MEDIA 2*/
+@media (min-width: 1024px) and (max-width: 1365px){
+  .menuheader{
+
+    width: 90%;
+    padding: 0 5%;
+    align-items: center;
+
+  }
+
+  .boton {
+    font-size: 0.80em;
+    width: 63%
+}
+
+
+  h1.titulo{
+
+    font-size: 5em;
+
+  }
+
+  h1.logo{
+
+    padding: 2% 0;
+    width: 33%;
+
+  }
+
+  .boton3{
+
+    font-size: 0.75em;
+
+  }
+
+  .seccion3{
+    width: 70%;
+  }
+
+  .seccion4{
+    width: 100%;
+    height: 60vh;
+  }
+
+  h2.live{
+
+    width: 63%;
+    text-align: left;
+    margin-bottom: 5%;
+
+  }
+
+  .seccion5sub {
+    display: inline-flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.live {
+  width: 52%;
+  text-align: left;
+  margin-bottom: 0%;
+}
+
+  #seccion6{
+
+    text-align: center;
+
+  }
+
+  .talento{
+
+    display: inline-flex;
+
+  }
+
+  .person{
+
+    width: 50%;
+
+  }
+
+  .perfil{
+
+    max-width: 100%;
+
+  }
+
+  .sandra{
+
+    padding-right: 1%;
+    margin: 5%;
+
+  }
+
+  .sandradesc{
+
+    margin: 5%;
+    padding-right: 1%;
+
+  }
+
+  #SieteYocho{
+
+    display: block;
+  
+  }
+
+  .seccion8{
+
+    width: 100%;
+    height: 48.5vh;
+
+  }
+
+  .seccion7{
+
+    width: 70%;
+    float: none;
+
+  }
+
+  .galeria > li{
+
+    width: 49.5%;
+
+  }
+
+  #elevenAndTwelve{
+
+    display: block;
+
+   }
+
+   .seccion11{
+
+    width: 100%;
+
+   }
+
+   .seccion12{
+
+    width: 100%;
+    height:113.5vh;
+
+   }
+
+   .subtexto12{
+
+    width: 80%;
+
+   }
+
+   h2.help{
+
+    font-size: 2.5em;
+
+   }
+
+   h3.ideas{
+
+    font-size: 1em;
+    width: 65%;
+
+   }
+
+   footer{
+
+    padding: 3% 6%;
+
+   }
+
+   .footer1{
+
+    display: block;
+    width: 100%;
+
+   }
+
+   .pfooter{
+
+    text-align: center;
+
+   }
+   
+   .redsocial{
+
+    width: 40%;
+    margin: 4% auto;
+
+   }
+
+   .helpCol{
+    margin-top: 7%;
+    font-size: 2.5em;
+  }
+
+  .seccion17{
+
+    background-position: center top;
+    background-size: cover;
+    height: 34vh;
+
+  }
+
+  .galeriaColecciones > li {
+    width: 49.5%;
+  }
+
+  .seccion14 {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+  #seccion15{
+
+    width: 100%;
+    height: 60vh;
+
+  }
+
+  .seccion16{
+
+    width: 100%;
+
+  }
+
+  .seccion14Studio {
+    background-position: center;
+    background-size: cover;
+    height: 31vh;
+}
+
+#quote{
+
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+#quoteIcon{
+
+  margin-right: 0.1em;
+
+}
+
+#quoteWords h2{
+
+  text-align: center;
+  font-size: 2em;
+
+}
+
+#quoteWords h3{
+
+  text-align: center;
+  width: 100%;
+
+}
+
+.seccion11{
+
+height: 110vh;
+
+}
+
+.notanoticia{
+
+width: 100%;
+margin-left: unset;
+
+}
+
+.galeriaStudio{
+
+  margin-left: 23%;
+
+}
+
+.flip-card{
+
+  margin-bottom: 10%;
+
+}
+
+#seccion23cont{
+
+  display: block;
+
+}
+
+#paragraphs{
+
+  width: 100%;
+
+}
+
+.imgSec25{
+
+  width: 50%;
+  
+}
+
+.picSec25{
+
+  width: 50%;
+
+}
+
+#personTalentMain1{
+
+  display: inline-flex;
+
+}
+
+#personTalentMain2{
+
+  display: inline-flex;
+
+}
+
+.personTalent2{
+
+  display: inline-flex;
+
+}
+
+.imgTalent{
+
+  width: 100%;
+
+}
+
+.perfilTalent{
+
+  width: 75%;
+
+}
+
+.talentDesc {
+  width: 100%;
+}
+
+
+.redsocialTalent {
+  width: 65%;
+}
+
+h1.sandraTalent{
+
+  font-size: 2.5em;
+
+}
+
+p.sandradescTalent{
+
+  width: 90%;
+
+}
+
+}
+/*TERMINA MEDIA 2*/
+
+/*EMPIEZA TERCER MEDIA*/
+
+@media (min-width: 1366px) and (max-width: 1535px){
+  .menuheader{
+
+    width: 90%;
+    padding: 0 5%;
+    align-items: center;
+
+  }
+
+.seccion4{
+
+  height: 88.6vh;
+
+}
+
+.seccion8{
+
+  height: 88vh;
+
+}
+
+.seccion11{
+
+  height: 92vh;
+
+}
+
+.seccion12{
+
+  height: 106.4vh;
+
+}
+
+#seccion15{
+
+  height: 60.8vh;
+
+}
+
+
+}
+
+/*TERMINA 3er MEDIA*/
+
+/*EMPIEZA CUARTO MEDIA*/
+
+@media (min-width: 1536px) and (max-width: 1920px){
+
+
+.seccion3{
+
+  height: 64.5vh;
+
+}
+
+.seccion4{
+
+  height: 88.6vh;
+
+}
+
+.seccion8{
+
+  height: 88vh;
+
+}
+
+.seccion11{
+
+  height: 92.3vh;
+
+}
+
+.seccion12{
+
+  height: 106.4vh;
+
+}
+
+
+}
+
+/*TERMINA 4TO MEDIA*/
+
+/*NUEVO*/
+
+#social-media{
+max-width: 100%;
+background-color: #222222;
+text-align: center;
+padding: 2.5em;
+}
+
+#social-media h1{
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+  }
+
+.redes-art {
+  display: inline-flex;
+  margin: 2em;
+  width: 8%;
+}
+
+
+label{
+
+  font-size: 1.5em;
+  color: white;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 75%;
+  background-color: transparent;
+
+}
+
+#gender {
+  width: 100%;
+  padding: 0.5em;
+  margin: 1.5em auto;
+  border-radius: 0.5em;
+  background-color: #222222;
+  color: white;
+}
+
+input[type="submit"] {
+  width: 12em;
+  background-color: #222222;
+  border-radius: 1em;
+  color: white;
+  margin-top: 3%;
+  font-weight: 500;
+}
+
+#comms{
+  font-size: 2em;
+  color: white;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 75%;
+  background-color: transparent;
+}
+
+form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#forms {
+  padding: 3%;
+  background-color: #181819;
+}
+
+.shrt-answer{
+
+  width: 99%;
+  padding: 0.5em;
+  margin: 1.5em auto;
+  border-radius: 0.75em;
+  background-color: #222222;
+  color: white;
+
+}
+
+
+
+
+
+
+  
+
+  
+
+
+ 
+
+
+
+
