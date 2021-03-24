@@ -427,3 +427,59 @@ body, html {
   }      
       
 }
+
+@media (max-width: 440px){
+
+  .logo img{
+
+    width: 75%;
+
+  }
+
+  .float{
+
+    width: 50%;
+    margin-right: auto;
+
+  }
+
+  .legend {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  #hero-int{
+
+    width: 50%;
+  }
+
+  #hero-int a{
+
+    font-size: 0.5em;
+
+  }   
+  
+  .legFeats{
+    font-size: 1em;
+}
+
+#comms{
+  font-size: 1.5em;
+}
+
+label{
+    
+  font-size: 1em;
+
+}
+
+#social-media h1 {
+  font-size: 2em;
+}
+
+.redes-art {
+  width: 15%;
+}
+      
+}
+
