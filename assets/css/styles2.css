@@ -387,3 +387,33 @@ body, html {
       .redsocial li:hover{
         opacity: 0.75;
       }
+
+
+      /*MEDIA QUERIE*/
+
+
+@media (max-width: 768px){
+
+  .float{
+
+    width: 50%;
+    margin-right: auto;
+
+  }
+
+  .legend {
+    font-size: 3em;
+  }
+
+  #hero-int{
+
+    width: 50%;
+  }
+
+  #hero-int a{
+
+    font-size: 1em;
+
+  }      
+      
+}
