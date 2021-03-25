@@ -223,14 +223,7 @@ body, html {
     flex-wrap: wrap;
   }
 
- 
-  .activo{
-
-    opacity: 1!important;
-
-  }
-
-  ul#botons li {
+  ul#botons li a{
     text-align: center;
     border: 0px;
     padding:6% 1.5em;
@@ -239,7 +232,19 @@ body, html {
     font-weight: 500;
     opacity: 0.5;
     transition: 0.5s;
+    text-decoration: none;
   }
+
+ 
+  .activo a{
+
+    opacity: 1!important;
+
+  }
+
+
+
+  
 
 
 
@@ -458,9 +463,13 @@ body, html {
     font-size: 0.5em;
 
   }   
+
+  #features {
+    display: block;
+}
   
   .legFeats{
-    font-size: 1em;
+    font-size: 2em;
 }
 
 #comms{
@@ -473,17 +482,23 @@ label{
 
 }
 
+input[type="submit"] {
+  margin: 6% auto 5% auto;
+}
+
 #social-media h1 {
   font-size: 2em;
 }
 
 .redes-art {
   width: 15%;
+  margin: 2em 1em 1em 1em;
 }
 
 footer p{
 
   margin-left: 3em;
+  line-height: 1.5em;
 
 }
       
