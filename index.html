@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>Reapers Design</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/styles2.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://kit.fontawesome.com/7d12c84f87.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -21,7 +21,7 @@
       <nav class="boton">
         <ul id="botons">
           <li class="activo"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <li><a href="#features">ABOUT</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
@@ -65,21 +65,22 @@
     </section>
     <section id="forms">
       <h2 id="comms">Have any commissions? Make sure to share your ideas down below!</h2>
-      <form>
-        <input class="shrt-answer" type="text" placeholder="Name">
+      <form id="myform" action="https://prog-3-leads-api-rest.vercel.app/leads" method="POST">
+        <input class="shrt-answer" type="text" placeholder="Name" name="nombre">
         <div class="gender">
           <label>Gender</label>
-          <select id="gender" name="Gender">
+          <select id="gender" name="sexo">
             <option value="def" selected hidden>...</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
         </div>
-        <input class="shrt-answer" type="email" placeholder="E-mail">
-        <textarea placeholder="Your idea/commission"></textarea>
+        <input class="shrt-answer" type="email" placeholder="E-mail" name="email">
+        <textarea placeholder="Your idea/commission" name="textarea"></textarea>
         <input type="submit" value="Submit">
       </form>
+      <p class="respuesta_form"></p>
     </section>
     <section id="social-media">
       <h1>Support my social media!</h1>
@@ -96,8 +97,20 @@
         </div>
       </div>
     </section>
+    <section id="trust">
+      <div id="trust-list">
+        <div id="skip">
+          <a href="#foot">Skip section</a>
+        </div>
+        <h1>Usual Reapers</h1>
+        <ul class="listado"></ul>
+        <div id="skip2">
+          <a href="#social-media">Skip section</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
+  <footer id="foot">
     <div class="footer1">
       <ul class="redsocial">
         <li class="iconored"><i class="fab fa-behance"></i></li>
@@ -108,5 +121,12 @@
     </div>
   </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"
+  integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
+  crossorigin="anonymous"></script>
+<script src="assets/js/functions.js"></script>
 
 </html>
