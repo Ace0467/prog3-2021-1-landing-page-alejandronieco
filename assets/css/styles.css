@@ -360,13 +360,27 @@ body, html {
     }
 
 
-    #trust div ul li{
+    .listado ul li{
 
       color: white;
       font-size: 1.5em;
       font-weight: 600;
+      margin: 1em;
 
     }
+
+    .listado ul {
+
+    text-align: center;
+    display: flex;
+
+    }
+
+    .listado {
+
+      text-align: center;
+  
+      }
 
     #skip{
 
@@ -456,6 +470,12 @@ body, html {
       
       .redsocial li:hover{
         opacity: 0.75;
+      }
+
+      .respuesta_form{
+
+        margin-top: 3%;
+      
       }
 
 

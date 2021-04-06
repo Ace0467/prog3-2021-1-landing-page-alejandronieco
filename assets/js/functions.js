@@ -23,7 +23,7 @@ $(document).ready(function () {
                 },
                 customemail: true
             },
-            "genero": {
+            "sexo": {
                 required: true
             },
             "comentarios": {
@@ -68,7 +68,7 @@ $(document).ready(function () {
                 $('.listado').html('');
                 response.forEach(element =>{
 
-                    $('.listado').append('<li>' + element.nombre + ' - ' + element.sexo + ' - ' + element.comentarios + '</li>')
+                    $('.listado').append('<ul>' + ' <li>' + element.nombre + ' - </li>' + '<li>' + ' ' + element.sexo + ' - </li>' +'<li>' + ' ' +  element.comentarios + '</li> ' + '</ul>')
 
                 });
 
