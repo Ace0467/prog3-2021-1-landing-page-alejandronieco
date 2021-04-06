@@ -26,7 +26,7 @@ $(document).ready(function () {
             "genero": {
                 required: true
             },
-            "textarea": {
+            "comentarios": {
                 required: true
             }
         },
@@ -35,7 +35,7 @@ $(document).ready(function () {
             "nombre": "Enter a valid name",
             "email": "Enter a valid E-Mail",
             "sexo": "Select an option",
-            "textarea": "Enter a valid text"
+            "comentarios": "Enter a valid text"
 
         },
             submitHandler: function (form){
