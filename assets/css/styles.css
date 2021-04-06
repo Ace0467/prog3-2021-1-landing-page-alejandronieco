@@ -577,7 +577,20 @@ input[type="submit"] {
 
 #trust div ul li {
   font-size: 1.25em;
-  margin-bottom: 2%;
+}
+
+.listado ul{
+
+  
+  margin:0 auto 14% auto;
+
+}
+
+.listado ul li{
+
+  
+  margin:0 auto;
+
 }
 
 #skip{
