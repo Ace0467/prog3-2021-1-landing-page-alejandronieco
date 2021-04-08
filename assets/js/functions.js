@@ -50,6 +50,8 @@ $(document).ready(function () {
                     success :function (response){
                         console.log(response)
                         $('.respuesta_form').html('Gracias ' + response.nombre + ' por tu mensaje')
+                        $('.listado').html('');
+                        loadLeads();
                     }
                 })
 
@@ -68,7 +70,9 @@ $(document).ready(function () {
                 $('.listado').html('');
                 response.forEach(element =>{
 
-                    $('.listado').append('<ul>' + ' <li>' + element.nombre + ' - </li>' + '<li>' + ' ' + element.sexo + ' - </li>' +'<li>' + ' ' +  element.comentarios + '</li> ' + '</ul>')
+                    //$('.listado').append('<ul>' + ' <li>' + element.nombre + ' - </li>' + '<li>' + ' ' + element.sexo + ' - </li>' +'<li>' + ' ' +  element.comentarios + '</li> ' + '</ul>')
+
+                    $('.listado').append('<li>' + element.nombre + ' - '  + element.sexo + ' - ' +  element.comentarios + '</li>')
 
                 });
 

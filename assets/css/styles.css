@@ -369,6 +369,15 @@ body, html {
 
     }
 
+    .listado li{
+
+      color: white;
+      font-size: 1.5em;
+      font-weight: 600;
+      margin: 1em;
+
+    }
+
     .listado ul {
 
     text-align: center;
